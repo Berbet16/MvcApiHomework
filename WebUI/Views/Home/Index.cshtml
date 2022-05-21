@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Models.Log>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <br />
+       <form>
+           <label for="query">Search :</label>
+           <input type="text" id="query" name="query" />
+           <input type="submit" value="Go"/>
+       </form>
+        <br />
+    </div>
+    <div class="col-md-12">
+       <table class="table table-responsive table-hover">
+           <tr>
+               <th>Id</th>
+               <th>Method</th>
+               <th>Path</th>
+               <th>Query</th>
+               <th>Created Time</th>
+           </tr>
+           @foreach (var log in Model)
+           {
+       <tr>
+           <td>@log.Id</td>
+           <td>@log.Method</td>
+           <td>@log.Path</td>
+           <td>@log.Query</td>
+           <td>@log.CreatedTime</td>
+       </tr>
+           }
+       </table>
+    </div>
+   
+</div>

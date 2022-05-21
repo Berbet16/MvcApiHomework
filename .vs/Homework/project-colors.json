@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "09f82c55-d535-41a0-b346-3cab8bf13ddf": {
+      "ProjectGuid": "09f82c55-d535-41a0-b346-3cab8bf13ddf",
+      "DisplayName": "WebUI",
+      "ColorIndex": 0
+    },
+    "4cc7a1b0-628d-42b2-ad16-7fbdac8b6d9e": {
+      "ProjectGuid": "4cc7a1b0-628d-42b2-ad16-7fbdac8b6d9e",
+      "DisplayName": "Models",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Diğer Dosyalar",
+      "ColorIndex": -1
+    },
+    "4886c9a8-deb1-44d7-ba9a-5b69e0e68d83": {
+      "ProjectGuid": "4886c9a8-deb1-44d7-ba9a-5b69e0e68d83",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 2
+    },
+    "732774e2-f49d-4758-bc94-a2d4d68e1574": {
+      "ProjectGuid": "732774e2-f49d-4758-bc94-a2d4d68e1574",
+      "DisplayName": "DAL",
+      "ColorIndex": 3
+    },
+    "ecf00d8b-2cda-4770-ba65-e47b0f2fc246": {
+      "ProjectGuid": "ecf00d8b-2cda-4770-ba65-e47b0f2fc246",
+      "DisplayName": "WebAPI",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

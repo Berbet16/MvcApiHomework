@@ -1,0 +1,60 @@
+﻿@model List<Models.Order>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Orders</h2>
+
+@{ ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<br />
+<p>
+    @Html.ActionLink("Add an Order", "Add", new object(), new { @class = "btn btn-warning" })
+</p>
+<br />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Customer Id</th>
+            <th>Employee Id</th>
+            <th>Order Date</th>
+            <th>Required Date</th>
+            <th>Shipped Date</th>
+            <th>Ship Via</th>
+            <th>Freight</th>
+            <th>Ship Name</th>
+            <th>City</th>
+            <th>Country</th>
+            
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.CustomerId</td>
+            <td>@item.EmployeeId</td>
+            <td>@item.OrderDate.ToShortDateString()</td>
+            <td>@item.RequiredDate.ToShortDateString()</td>
+            <td>@item.ShippedDate</td>
+            <td>@item.ShipVia</td>
+            <td>@item.Freight</td>
+            <td>@item.ShipName</td>
+            <td>@(item.ShipAddress!=null? item.ShipAddress.City: "")</td>
+            <td>@(item.ShipAddress!=null? item.ShipAddress.Country:"")</td>
+            <td>
+                @Html.ActionLink("Edit", "Update", new { id = item.Id }, new { @class = "btn btn-warning" })
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

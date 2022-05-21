@@ -1,0 +1,42 @@
+﻿@model List<Models.Supplier>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<p>
+    @Html.ActionLink("Add a Supplier", "Add", new object(), new { @class = "btn btn-warning" })
+</p>
+<br />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Company Name</th>
+            <th>Contact Title</th>
+            <th>Contact Name</th>
+            <th>Address</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.CompanyName</td>
+            <td>@item.ContactTitle</td>
+            <td>@item.ContactName</td>
+            <td>@item.Address</td>
+            <td>
+                @Html.ActionLink("Edit", "Update", new { id = item.Id }, new { @class = "btn btn-warning" })
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,50 @@
+﻿@model List<Models.Employee>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<p>
+    @Html.ActionLink("Add an Employee", "Add", new object(), new { @class = "btn btn-warning" })
+</p>
+<br />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Nmae</th>
+            <th>Last Name</th>
+            <th>Title</th>
+            <th>Title Of Courtesy</th>
+            <th>Reports To</th>
+            <th>Birth Date</th>
+            <th>Hire Date</th>
+            <th>City</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.Title</td>
+            <td>@item.TitleOfCourtesy</td>
+            <td>@item.ReportsTo</td>
+            <td>@item.BirthDate</td>
+            <td>@item.HireDate</td>
+            <td>@item.Address.City</td>
+            <td>
+                @Html.ActionLink("Edit", "Update", new { id = item.Id }, new { @class = "btn btn-warning" })
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+

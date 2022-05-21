@@ -1,0 +1,6 @@
+C:\Users\BS\Desktop\Homework_WebUI_Tamamlandi\Homework\Models\bin\Debug\Models.dll
+C:\Users\BS\Desktop\Homework_WebUI_Tamamlandi\Homework\Models\bin\Debug\Models.pdb
+C:\Users\BS\Desktop\Homework_WebUI_Tamamlandi\Homework\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\BS\Desktop\Homework_WebUI_Tamamlandi\Homework\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\BS\Desktop\Homework_WebUI_Tamamlandi\Homework\Models\obj\Debug\Models.dll
+C:\Users\BS\Desktop\Homework_WebUI_Tamamlandi\Homework\Models\obj\Debug\Models.pdb
