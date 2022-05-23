@@ -58,7 +58,7 @@ namespace WebAPI.Controllers
         {
             Log log = new Log
             {
-                Method = "GET",
+                Method = "POST",
                 Path = "/customer/Add/",
                 Query = "",
                 CreatedTime = DateTime.Now,
@@ -73,7 +73,7 @@ namespace WebAPI.Controllers
         {
             Log log = new Log
             {
-                Method = "GET",
+                Method = "PUT",
                 Path = "/customer/Update/" + id,
                 Query = "",
                 CreatedTime = DateTime.Now,
@@ -89,7 +89,7 @@ namespace WebAPI.Controllers
         {
             Log log = new Log
             {
-                Method = "GET",
+                Method = "DELETE",
                 Path = "/customer/Delete/" +id,
                 Query = "",
                 CreatedTime = DateTime.Now,

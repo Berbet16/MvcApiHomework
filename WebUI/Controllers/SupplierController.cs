@@ -18,7 +18,7 @@ namespace Homework.WebUI.Controllers
         public SupplierController()
         {
             httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri("https://localhost:44358/api/");
+            httpClient.BaseAddress = new Uri("https://localhost:44313/api/");
         }
 
         public async Task<ActionResult> Index()
