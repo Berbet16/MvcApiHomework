@@ -16,7 +16,8 @@ namespace WebAPI
             // it is NOT necessary to register your controllers
             
             container.RegisterType<ILogger, LoggerForPostgre>();
-            
+            //container.RegisterType<ILogger, LoggerForSQLServer>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }
